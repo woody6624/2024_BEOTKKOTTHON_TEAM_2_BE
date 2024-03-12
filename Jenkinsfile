@@ -13,7 +13,7 @@ pipeline {
             steps {
                 dir('./muckkitlist_nest'){
                     script {
-                        sh 'npm install'
+                        sh '/usr/local/bin/npm install'
                     }
                 }
             }
@@ -23,7 +23,7 @@ pipeline {
             steps {
                 dir('./muckkitlist_nest'){
                     script {
-                        sh 'npm run start:dev'
+                        sh '/usr/local/bin/npm run start:dev'
                     }
                 }
             }
